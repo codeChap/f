@@ -1,6 +1,6 @@
 <?php
 
-namespace Codechap\F;
+namespace codechap\f;
 
 class F
 {
@@ -48,7 +48,7 @@ class F
 
     /**
      * Post to Facebook page
-     * 
+     *
      * @param Msg|array $content Single Msg object or array of Msg objects for multi-photo posts
      * @return array Response from Facebook API
      */
@@ -197,7 +197,7 @@ class F
         }
 
         $endpoint = self::API_BASE_URL . $this->apiVersion . '/me';
-        
+
         $params = http_build_query([
             'access_token' => $this->accessToken,
             'fields' => 'id,name'

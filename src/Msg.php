@@ -1,6 +1,6 @@
 <?php
 
-namespace Codechap\F;
+namespace codechap\f;
 
 class Msg
 {
