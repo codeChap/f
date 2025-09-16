@@ -1,0 +1,22 @@
+{
+    "name": "codechap/f",
+    "description": "Posts to your own Facebook page only.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codechap\\F\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "authors": [
+        {
+            "name": "CodeChap",
+            "email": "hello@codechap.com"
+        }
+    ]
+}

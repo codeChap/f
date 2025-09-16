@@ -1,0 +1,43 @@
+# Composer
+/vendor/
+composer.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test files
+*.log
+*.cache
+.phpunit.result.cache
+
+# Temporary files
+/tmp/
+/temp/
+
+# Test images (optional - uncomment if you don't want to track test images)
+# *.jpg
+# *.jpeg
+# *.png
+# *.gif
+
+# Access tokens and credentials
+tokens.txt
+credentials.json
+*.token
+
+# Build artifacts
+/build/
+/dist/
+
+# Documentation build
+/docs/_build/
