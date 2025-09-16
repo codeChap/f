@@ -149,8 +149,8 @@ echo "✓ Configuration saved to .env.local\n\n";
 // Update example.php
 if (file_exists('example.php')) {
     $example = file_get_contents('example.php');
-    $example = preg_replace('/\$pageId = \'[^\']+\'/', "\$pageId = '{$pageId}'", $example);
-    $example = preg_replace('/\$accessToken = \'[^\']+\'/', "\$accessToken = '{$pageToken}'", $example);
+    $example = preg_replace('/\$pageId = \'[^\']*\'/', "\$pageId = '{$pageId}'", $example);
+    $example = preg_replace('/\$accessToken = \'[^\']*\'/', "\$accessToken = '{$pageToken}'", $example);
     file_put_contents('example.php', $example);
     echo "✓ Updated example.php\n\n";
 }
