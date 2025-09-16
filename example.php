@@ -2,8 +2,8 @@
 
 require 'vendor/autoload.php';
 
-use Codechap\F\F;
-use Codechap\F\Msg;
+use codechap\f\F;
+use codechap\f\Msg;
 
 // App Credentials
 $appId = trim(file_get_contents(realpath(__DIR__ . '/../../') . '/FACEBOOK_APP_ID.txt'));
