@@ -38,8 +38,6 @@ try {
     $response = $fb->post($msg);
     echo "✓ Posted successfully! ID: " . $response['id'] . "\n\n";
 
-    die();
-
     // Example 2: Post with single photo
     // Make sure test-image.jpg exists in your project directory
     if (file_exists('test-image.jpg')) {
