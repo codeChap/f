@@ -14,6 +14,7 @@ A simple PHP library for posting to Facebook Pages using the Graph API. This pac
 
 ```bash
 composer require codechap/f
+composer require codechap/f @dev
 ```
 
 ## Quick Start
@@ -210,10 +211,11 @@ Facebook enforces rate limits on API calls. Be mindful of:
 
 ## Troubleshooting
 
-### No pages found
+### No pages found or Missing pages
 - Make sure you're an admin of at least one Facebook page
 - Grant all required permissions when generating the token
 - Select your pages in the authorization popup
+- **Note:** Pages belonging to different Business Manager accounts or business assets may not all appear together. You can only access pages within the same business context in a single token
 
 ### Token expired
 - Tokens expire after 60 days
